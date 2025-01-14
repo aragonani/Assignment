@@ -3,10 +3,10 @@
     <head>
         <title>Assignment</title>
         <style>
-            tr:nth-child(){
+            /* tr:nth-child(){
                 text-align: center;
                 background-color: aqua;
-            }
+            } */
             form,label,button,input{
                 display: block;
                 /* padding: 5px; */
@@ -47,7 +47,7 @@
         <h4>Lets have a look at all 50-50 worldcup:</h4>
 
         <table>
-            <tr>Cricket World Cup</tr>
+            <caption>Cricket World Cup</caption>
             <thead>
             <tr>
                 <th>year</th>
@@ -159,6 +159,8 @@
         <p>This table has been taken from cricket website: <a href="https://en.wikipedia.org/wiki/Cricket_World_Cup" target="_blank">click here</a> to visit</p>
         <p>I am cricket guru btw, if you want to know something, you can contact me</p>
         <form>
+            <fieldset>
+                <legend>Contact Form</legend>
             <label for="name">Full Name:</label>
             <input type="text" id="name" required minlength="3" autofocus>
 
@@ -194,8 +196,9 @@
                 <option value="Tim Southee"></option>
             </datalist>
             <label>Address</label>
-            <textarea form="forms"></textarea>
+            <textarea form="forms" rows="4" cols="25" placeholder="Enter your address here"></textarea>
             <button type="submit">Register</button>
+        </fieldset>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/YphL3Whh5B0?si=97tZPsZnDWQGShP_" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
